@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Stylist — FitVerse AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="stylist">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">FITVERSE <span class="accent">AI</span></a>
+      <div class="header-icons">
+        <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+          <span data-icon="heart"></span>
+          <span class="badge" id="wishlistBadge" hidden>0</span>
+        </a>
+        <a href="cart.html" class="icon-btn" aria-label="Bag">
+          <span data-icon="bag"></span>
+          <span class="badge" id="cartBadge" hidden>0</span>
+        </a>
+        <a href="login.html" class="avatar-btn is-guest" id="avatarBtn" aria-label="Account"></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="max-width:640px;">
+    <div class="page-head text-center" style="padding-top:var(--space-7);">
+      <div class="icon-wrap" data-icon="wand" style="color:var(--color-accent);margin-bottom:var(--space-3);"></div>
+      <h1 class="serif" style="font-size:28px;">AI Stylist</h1>
+      <p style="color:var(--color-text-secondary);margin-top:var(--space-2);">Get editorial recommendations from an AI trained on runway, street and your closet.</p>
+    </div>
+
+    <div id="stylistForm" style="margin:var(--space-7) 0 var(--space-9);">
+      <div class="field">
+        <label for="occasionSelect">Occasion</label>
+        <select id="occasionSelect">
+          <option>Everyday</option>
+          <option>Work</option>
+          <option>Evening</option>
+          <option>Weekend</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Style</label>
+        <div class="chip-group" id="styleChips">
+          <button type="button" class="chip" data-chip="Minimal">Minimal</button>
+          <button type="button" class="chip" data-chip="Classic">Classic</button>
+          <button type="button" class="chip" data-chip="Bold">Bold</button>
+          <button type="button" class="chip" data-chip="Streetwear">Streetwear</button>
+          <button type="button" class="chip" data-chip="Romantic">Romantic</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="budgetSelect">Budget</label>
+        <select id="budgetSelect">
+          <option>Under $150</option>
+          <option>$150–$350</option>
+          <option>$350+</option>
+        </select>
+      </div>
+
+      <button type="button" class="btn btn-ai btn-block" id="getRecsBtn"><span data-icon="sparkle"></span> Get My Recommendations</button>
+    </div>
+
+    <div class="loading-panel hidden" id="stylistLoading">
+      <div class="ring"></div>
+      <p>Your AI Stylist is curating a selection…</p>
+    </div>
+
+    <div class="hidden" id="stylistResults" style="padding-bottom:var(--space-9);">
+      <div class="section-head">
+        <span class="eyebrow accent">Curated for you</span>
+        <h2 class="serif" style="font-size:24px;">Your recommendations.</h2>
+      </div>
+      <div id="recsGrid" style="display:flex;flex-direction:column;gap:var(--space-5);"></div>
+      <button type="button" class="btn btn-outline btn-block" id="restyleBtn" style="margin-top:var(--space-6);">Refine preferences</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <h2 class="logo">FITVERSE <span class="accent">AI</span></h2>
+        <p class="footer-tagline">A fashion intelligence platform for the next generation. Curated. Adaptive. Yours.</p>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="shop.html?category=women">Women</a></li>
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="shop.html?category=outerwear">Outerwear</a></li>
+            <li><a href="shop.html?category=sale">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Intelligence</h3>
+          <ul>
+            <li><a href="try-on.html">Virtual Try-On</a></li>
+            <li><a href="stylist.html">AI Stylist</a></li>
+            <li><a href="shop.html">Smart Recommendations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#" data-modal="help">Help Center</a></li>
+            <li><a href="#" data-modal="returns">Returns</a></li>
+            <li><a href="#" data-modal="contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FitVerse AI · Crafted with intelligence &amp; care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

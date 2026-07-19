@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product — FitVerse AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="product">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">FITVERSE <span class="accent">AI</span></a>
+      <div class="header-icons">
+        <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+          <span data-icon="heart"></span>
+          <span class="badge" id="wishlistBadge" hidden>0</span>
+        </a>
+        <a href="cart.html" class="icon-btn" aria-label="Bag">
+          <span data-icon="bag"></span>
+          <span class="badge" id="cartBadge" hidden>0</span>
+        </a>
+        <a href="login.html" class="avatar-btn is-guest" id="avatarBtn" aria-label="Account"></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container pdp">
+    <a href="shop.html" class="back-link"><span data-icon="chevronLeft"></span> Back to shop</a>
+
+    <div id="pdpContent" class="pdp-layout"></div>
+
+    <section class="reviews-section reveal">
+      <div class="section-head" style="margin-bottom:var(--space-5);">
+        <span class="eyebrow">Reviews</span>
+        <h2 class="serif" style="font-size:24px;">What people are saying.</h2>
+      </div>
+
+      <div id="reviewsList"></div>
+      <p id="noReviews" class="hidden" style="color:var(--color-text-secondary);font-size:14px;">No reviews yet — be the first.</p>
+
+      <form id="reviewForm" class="hidden" style="max-width:480px;margin-top:var(--space-6);" novalidate>
+        <h3 class="serif" style="font-size:18px;margin-bottom:var(--space-4);">Write a review</h3>
+        <div class="field" data-field="rating">
+          <label for="reviewRating">Rating</label>
+          <select id="reviewRating">
+            <option value="5">5 — Excellent</option>
+            <option value="4">4 — Good</option>
+            <option value="3">3 — Average</option>
+            <option value="2">2 — Poor</option>
+            <option value="1">1 — Terrible</option>
+          </select>
+        </div>
+        <div class="field" data-field="comment">
+          <label for="reviewComment">Comment</label>
+          <textarea id="reviewComment" rows="3" placeholder="How did it fit? How's the fabric?"></textarea>
+          <span class="error-msg">Enter a comment</span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Review</button>
+      </form>
+      <p id="reviewSignInPrompt" class="hidden" style="margin-top:var(--space-6);font-size:14px;color:var(--color-text-secondary);">
+        <a href="login.html" style="color:var(--color-accent);font-weight:600;">Sign in</a> to write a review.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <h2 class="logo">FITVERSE <span class="accent">AI</span></h2>
+        <p class="footer-tagline">A fashion intelligence platform for the next generation. Curated. Adaptive. Yours.</p>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="shop.html?category=women">Women</a></li>
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="shop.html?category=outerwear">Outerwear</a></li>
+            <li><a href="shop.html?category=sale">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Intelligence</h3>
+          <ul>
+            <li><a href="try-on.html">Virtual Try-On</a></li>
+            <li><a href="stylist.html">AI Stylist</a></li>
+            <li><a href="shop.html">Smart Recommendations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#" data-modal="help">Help Center</a></li>
+            <li><a href="#" data-modal="returns">Returns</a></li>
+            <li><a href="#" data-modal="contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FitVerse AI · Crafted with intelligence &amp; care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

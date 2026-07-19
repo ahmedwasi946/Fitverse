@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Account — FitVerse AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="profile">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">FITVERSE <span class="accent">AI</span></a>
+      <div class="header-icons">
+        <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+          <span data-icon="heart"></span>
+          <span class="badge" id="wishlistBadge" hidden>0</span>
+        </a>
+        <a href="cart.html" class="icon-btn" aria-label="Bag">
+          <span data-icon="bag"></span>
+          <span class="badge" id="cartBadge" hidden>0</span>
+        </a>
+        <a href="login.html" class="avatar-btn is-guest" id="avatarBtn" aria-label="Account"></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="max-width:760px;">
+    <div class="profile-hero">
+      <div class="profile-avatar" id="profileAvatarInitial"></div>
+      <div>
+        <h1 class="serif" id="profileName"></h1>
+        <p id="profileEmail"></p>
+      </div>
+    </div>
+
+    <section class="profile-section">
+      <h2><span class="eyebrow accent">Intelligence</span>Your AI Avatar</h2>
+      <p style="color:var(--color-text-secondary);font-size:14px;margin-bottom:var(--space-4);">Upload a full-length photo so Virtual Try-On can show you the fit before you buy.</p>
+      <div class="avatar-upload">
+        <div class="preview" id="avatarPreview" data-icon="user"></div>
+        <div>
+          <label class="btn btn-outline btn-sm" for="avatarUploadInput" style="cursor:pointer;">Upload photo</label>
+          <input type="file" id="avatarUploadInput" accept="image/*" class="hidden">
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-section">
+      <h2><span class="eyebrow accent">Recent</span>Order History</h2>
+      <div id="orderHistory"></div>
+    </section>
+
+    <section class="profile-section">
+      <h2><span class="eyebrow">Settings</span>Account Details</h2>
+      <form id="accountForm" novalidate>
+        <div class="field" data-field="name">
+          <label for="accountName">Full name</label>
+          <input type="text" id="accountName">
+          <span class="error-msg">Enter your name</span>
+        </div>
+        <div class="field" data-field="email">
+          <label for="accountEmail">Email</label>
+          <input type="email" id="accountEmail">
+          <span class="error-msg">Enter a valid email address</span>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+      </form>
+    </section>
+
+    <section class="profile-section" style="border-bottom:none;">
+      <button type="button" class="btn btn-outline" id="logoutBtn">Log Out</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <h2 class="logo">FITVERSE <span class="accent">AI</span></h2>
+        <p class="footer-tagline">A fashion intelligence platform for the next generation. Curated. Adaptive. Yours.</p>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="shop.html?category=women">Women</a></li>
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="shop.html?category=outerwear">Outerwear</a></li>
+            <li><a href="shop.html?category=sale">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Intelligence</h3>
+          <ul>
+            <li><a href="try-on.html">Virtual Try-On</a></li>
+            <li><a href="stylist.html">AI Stylist</a></li>
+            <li><a href="shop.html">Smart Recommendations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#" data-modal="help">Help Center</a></li>
+            <li><a href="#" data-modal="returns">Returns</a></li>
+            <li><a href="#" data-modal="contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FitVerse AI · Crafted with intelligence &amp; care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitVerse AI — Your wardrobe, intelligently curated.</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">FITVERSE <span class="accent">AI</span></a>
+      <div class="header-icons">
+        <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+          <span data-icon="heart"></span>
+          <span class="badge" id="wishlistBadge" hidden>0</span>
+        </a>
+        <a href="cart.html" class="icon-btn" aria-label="Bag">
+          <span data-icon="bag"></span>
+          <span class="badge" id="cartBadge" hidden>0</span>
+        </a>
+        <a href="login.html" class="avatar-btn is-guest" id="avatarBtn" aria-label="Account"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <span class="eyebrow accent">Fall · Winter · Intelligence</span>
+      <h1>Dress like the algorithm <em>knows you.</em></h1>
+      <p class="lead">FitVerse AI sees the way clothes fall on <em>you</em>. Try anything on. Get styled. Confidently buy what flatters — never what doesn't.</p>
+      <div class="actions">
+        <a href="shop.html" class="btn btn-primary">Shop the edit <span data-icon="arrowRight"></span></a>
+        <a href="stylist.html" class="btn btn-ai"><span data-icon="sparkle"></span> Open AI Stylist</a>
+      </div>
+    </section>
+
+    <!-- The Edit -->
+    <section class="section container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Edit</span>
+        <h2>Selected for the season.</h2>
+      </div>
+      <div class="product-grid" id="editGrid"></div>
+      <div class="text-center" style="padding-top: var(--space-4);">
+        <a href="shop.html" class="btn btn-outline">View all products</a>
+      </div>
+    </section>
+
+    <!-- Intelligence -->
+    <section class="section container" id="intelligence" style="border-top:1px solid var(--color-border);">
+      <div class="feature-block reveal">
+        <div class="icon-wrap" data-icon="camera"></div>
+        <div class="text">
+          <h3>Virtual Try-On</h3>
+          <p>Upload a photo. See the fit. No imagination required.</p>
+          <a href="try-on.html" class="back-link" style="padding-top:var(--space-3);">Try it now <span data-icon="arrowRight" style="width:14px;height:14px;"></span></a>
+        </div>
+      </div>
+      <div class="feature-block reveal">
+        <div class="icon-wrap" data-icon="wand"></div>
+        <div class="text">
+          <h3>AI Stylist</h3>
+          <p>Get editorial recommendations from an AI trained on runway, street and your closet.</p>
+          <a href="stylist.html" class="back-link" style="padding-top:var(--space-3);">Open stylist <span data-icon="arrowRight" style="width:14px;height:14px;"></span></a>
+        </div>
+      </div>
+      <div class="feature-block reveal">
+        <div class="icon-wrap" data-icon="sparkle"></div>
+        <div class="text">
+          <h3>Smart Fit</h3>
+          <p>Confidence scores, fabric drape, size match — engineered into every product.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <h2 class="logo">FITVERSE <span class="accent">AI</span></h2>
+        <p class="footer-tagline">A fashion intelligence platform for the next generation. Curated. Adaptive. Yours.</p>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="shop.html?category=women">Women</a></li>
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="shop.html?category=outerwear">Outerwear</a></li>
+            <li><a href="shop.html?category=sale">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Intelligence</h3>
+          <ul>
+            <li><a href="try-on.html">Virtual Try-On</a></li>
+            <li><a href="stylist.html">AI Stylist</a></li>
+            <li><a href="shop.html">Smart Recommendations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#" data-modal="help">Help Center</a></li>
+            <li><a href="#" data-modal="returns">Returns</a></li>
+            <li><a href="#" data-modal="contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FitVerse AI · Crafted with intelligence &amp; care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

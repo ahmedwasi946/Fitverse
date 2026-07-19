@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In — FitVerse AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">FITVERSE <span class="accent">AI</span></a>
+      <div class="header-icons">
+        <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+          <span data-icon="heart"></span>
+          <span class="badge" id="wishlistBadge" hidden>0</span>
+        </a>
+        <a href="cart.html" class="icon-btn" aria-label="Bag">
+          <span data-icon="bag"></span>
+          <span class="badge" id="cartBadge" hidden>0</span>
+        </a>
+        <a href="login.html" class="avatar-btn is-guest" id="avatarBtn" aria-label="Account"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-dark" id="authIntro">
+      <div class="auth-intro">
+        <h1>Your wardrobe,<span class="accent-line">intelligently curated.</span></h1>
+        <p>Sign in once — your style profile follows you across every visit. No spam, no compromise.</p>
+        <button type="button" class="btn btn-light" id="beginBtn">Begin <span data-icon="arrowRight"></span></button>
+      </div>
+    </section>
+
+    <section class="auth-panel hidden" id="authPanel">
+      <div class="auth-tabs">
+        <button type="button" class="auth-tab is-active" data-tab="signin">Sign In</button>
+        <button type="button" class="auth-tab" data-tab="signup">Create Account</button>
+      </div>
+
+      <form class="auth-form is-active" id="signinForm" data-form="signin" novalidate>
+        <h1 class="serif">Welcome back.</h1>
+        <p class="sub">Sign in to pick up right where you left off.</p>
+        <div class="field" data-field="email">
+          <label for="signinEmail">Email</label>
+          <input type="email" id="signinEmail" autocomplete="email" placeholder="you@example.com">
+          <span class="error-msg">Enter a valid email address</span>
+        </div>
+        <div class="field" data-field="password">
+          <label for="signinPassword">Password</label>
+          <input type="password" id="signinPassword" autocomplete="current-password" placeholder="••••••••">
+          <span class="error-msg">Password must be at least 6 characters</span>
+        </div>
+        <div class="auth-links">
+          <a href="#" data-modal="help">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+        <p class="auth-switch">New to FitVerse AI? <button type="button" data-switch="signup">Create an account</button></p>
+      </form>
+
+      <form class="auth-form" id="signupForm" data-form="signup" novalidate>
+        <h1 class="serif">Create your account.</h1>
+        <p class="sub">Takes less than a minute.</p>
+        <div class="field" data-field="name">
+          <label for="signupName">Full name</label>
+          <input type="text" id="signupName" autocomplete="name" placeholder="Jordan Ellis">
+          <span class="error-msg">Enter your name</span>
+        </div>
+        <div class="field" data-field="email">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" autocomplete="email" placeholder="you@example.com">
+          <span class="error-msg">Enter a valid email address</span>
+        </div>
+        <div class="field" data-field="password">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" autocomplete="new-password" placeholder="At least 6 characters">
+          <span class="error-msg">Password must be at least 6 characters</span>
+        </div>
+        <div class="field" data-field="confirm">
+          <label for="signupConfirm">Confirm password</label>
+          <input type="password" id="signupConfirm" autocomplete="new-password" placeholder="Repeat your password">
+          <span class="error-msg">Passwords don't match</span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+        <p class="auth-switch">Already have an account? <button type="button" data-switch="signin">Sign in</button></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

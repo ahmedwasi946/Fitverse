@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — FitVerse AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">FITVERSE <span class="accent">AI</span></a>
+      <div class="header-icons">
+        <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+          <span data-icon="heart"></span>
+          <span class="badge" id="wishlistBadge" hidden>0</span>
+        </a>
+        <a href="cart.html" class="icon-btn" aria-label="Bag">
+          <span data-icon="bag"></span>
+          <span class="badge" id="cartBadge" hidden>0</span>
+        </a>
+        <a href="login.html" class="avatar-btn is-guest" id="avatarBtn" aria-label="Account"></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="product-grid" id="shopGrid"></div>
+    <div class="empty-state hidden" id="shopEmpty">
+      <div class="icon-wrap" data-icon="box"></div>
+      <h2>Nothing here yet.</h2>
+      <p>We couldn't find anything in this category.</p>
+      <a href="shop.html" class="btn btn-primary">View all products</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <h2 class="logo">FITVERSE <span class="accent">AI</span></h2>
+        <p class="footer-tagline">A fashion intelligence platform for the next generation. Curated. Adaptive. Yours.</p>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="shop.html?category=women">Women</a></li>
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="shop.html?category=outerwear">Outerwear</a></li>
+            <li><a href="shop.html?category=sale">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Intelligence</h3>
+          <ul>
+            <li><a href="try-on.html">Virtual Try-On</a></li>
+            <li><a href="stylist.html">AI Stylist</a></li>
+            <li><a href="shop.html">Smart Recommendations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#" data-modal="help">Help Center</a></li>
+            <li><a href="#" data-modal="returns">Returns</a></li>
+            <li><a href="#" data-modal="contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FitVerse AI · Crafted with intelligence &amp; care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>
